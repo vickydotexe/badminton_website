@@ -2,6 +2,21 @@
 <html>
 <head>
 	<title>Badminton</title>
+	<script>
+		window.addEventListener ('load', countLetters, false);
+	
+		function countLetters() {
+	  var bodyText = document.body.innerText;
+	  var letterCount = 0;
+	  for (var i = 0; i < bodyText.length; i++) {
+		if (bodyText[i].match(/[A-Za-z]/)) {
+		  letterCount++;
+		}
+	  }
+	  document.getElementById("letterCount").innerHTML = "Total letter count: " + letterCount;
+	}
+	
+	</script>
 </head>
 <body>
 	<main>
@@ -27,6 +42,7 @@
 				<figcaption>Das Badmintonfeld mit Netz und Linien</figcaption>
 			</figure>
 			<p>Beim Badminton kommt es auf eine gute Technik an, um den Federball richtig zu schlagen. Dazu gehört unter anderem ein gutes Augen-Hand-Koordination, eine korrekte Schlägerhaltung sowie eine gute Beinarbeit, um sich schnell im Spielfeld bewegen zu können. Es gibt verschiedene Schlagtechniken wie den Vorhandschlag, den Rückhandschlag, den Dropshot und den Smash. Es gibt auch eine Reihe von Regeln, die beim Badminton befolgt werden müssen. Zum Beispiel darf der Federball nur einmal pro Seite des Netzes geschlagen werden, bevor er über das Netz geht.</p>
+			<p id="letterCount"></p>
 			<footer>
 				<p>&copy; 2023 Badminton Association</p>
 			</footer>
