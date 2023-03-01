@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="DE">
 <head>
 	<title>Badminton</title>
 	<script>
-		window.addEventListener ('load', countLetters, false);
+		window.addEventListener ('load', countCharacters, false);
 	
-		function countLetters() {
-	  var bodyText = document.body.innerText;
-	  var letterCount = 0;
-	  for (var i = 0; i < bodyText.length; i++) {
-		if (bodyText[i].match(/[A-Za-z]/)) {
-		  letterCount++;
+		function countCharacters() {
+		  var bodyText = document.body.innerText;
+		  document.getElementById("letterCount").innerHTML = "Total character count: " + bodyText.length;
+		  
 		}
-	  }
-	  document.getElementById("letterCount").innerHTML = "Total letter count: " + letterCount;
-	}
-	
-	</script>
+	</script>	
 </head>
 <body>
 	<main>
@@ -25,7 +19,7 @@
 				<h1>Was ist Badminton?</h1>
 			</header>
 			<figure>
-				<img src="badmintonspieler.jpg" alt="Badmintonspieler" />
+				<img src="bilder/badmintonspieler.jpg" alt="Badmintonspieler">
 				<figcaption>Badmintonspieler bei einem Wettkampf</figcaption>
 			</figure>
 			<p>Badminton ist ein beliebtes Rückschlagspiel, das mit einem Federball und Schlägern gespielt wird. Es wird auf einem Feld mit einem Netz in der Mitte gespielt, ähnlich wie beim Volleyball. Das Ziel des Spiels ist es, den Federball über das Netz zu schlagen und ihn auf dem Boden auf der gegnerischen Seite des Feldes aufkommen zu lassen, ohne dass der Gegner ihn zurückspielen kann.</p>
@@ -38,13 +32,13 @@
 				<h2>Regeln und Technik</h2>
 			</header>
 			<figure>
-				<img src="badmintonfeld.jpg" alt="Badmintonfeld" />
+				<img src="bilder/badmintonfeld.jpg" alt="Badmintonfeld">
 				<figcaption>Das Badmintonfeld mit Netz und Linien</figcaption>
 			</figure>
 			<p>Beim Badminton kommt es auf eine gute Technik an, um den Federball richtig zu schlagen. Dazu gehört unter anderem ein gutes Augen-Hand-Koordination, eine korrekte Schlägerhaltung sowie eine gute Beinarbeit, um sich schnell im Spielfeld bewegen zu können. Es gibt verschiedene Schlagtechniken wie den Vorhandschlag, den Rückhandschlag, den Dropshot und den Smash. Es gibt auch eine Reihe von Regeln, die beim Badminton befolgt werden müssen. Zum Beispiel darf der Federball nur einmal pro Seite des Netzes geschlagen werden, bevor er über das Netz geht.</p>
-			<p id="letterCount"></p>
 			<footer>
 				<p>&copy; 2023 Badminton Association</p>
+				<p id="letterCount"></p>
 			</footer>
 		</section>
 	</main>
