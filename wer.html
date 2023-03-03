@@ -5,99 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Malaysia Open> </title>
+    <title> Malaysia Open </title>
+    <script>
 
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+    </script>
 <style>
 
-    *{
+*{
   box-sizing: border-box;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 20px;
-background-color: teal;
-color: #fff;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
 }
 
-.nav-links a {
-color: #fff;
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
 }
 
-/* LOGO */
-
-.logo {
-font-size: 30px;
+.navbar-links {
+    height: 100%;
 }
 
-/* NAVBAR MENU */
-
-.menu {
-display: flex;
-gap: 1em;
-font-size: 16px;
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-.menu li:hover {
-background-color: #4c9e9e;
-border-radius: 5px;
-transition: 0.3s ease;
+.navbar-links li {
+    list-style: none;
 }
 
-.menu li {
-padding: 5px 14px;
-
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
 }
 
-/* CHECKBOX HACK */
-
-input[type=checkbox]{
-display: none;
-
-} 
-
-/*HAMBURGER MENU*/
-
-.hamburger {
-display: none;
-font-size: 24px;
-user-select: none;
+.navbar-links li:hover {
+    background-color: #555;
 }
 
-/* APPLYING MEDIA QUERIES */
-
-@media (max-width: 900px) 
-{
-.menu { 
-display:none;
-position: absolute;
-background-color:teal;
-right: 0;
-left: 0;
-text-align: center;
-padding: 16px 0;
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
 
-.menu li:hover {
-display: inline-block;
-background-color:#4c9e9e;
-transition: 0.3s ease;
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
-.menu li + li {
-margin-top: 12px;
-}
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-input[type=checkbox]:checked ~ .menu{
-display: block;
-}
+    .toggle-button {
+        display: flex;
+    }
 
-.hamburger {
-display: block;
-}
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
 
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
 }
  
 table {
@@ -138,7 +149,8 @@ th:last-child {
 .container {
     display:grid;
     height: 100vh;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 900px));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 0.5rem;
     font-family:Arial, Helvetica, sans-serif;
    
@@ -158,50 +170,29 @@ th:last-child {
 
 
 </style>
-   
 </head>
 <body>
     <main>
-        <nav class="navbar">
-
-            <!-- LOGO -->
-            
-        <div class="logo">BADMINTON</div>
-            
-            <!-- NAVIGATION MENU -->
-            
-        <ul class="nav-links">
-   
-  <!-- <input type="checkbox" id="checkbox_toggle">
-    <label for="checkbox_toggle" class="hamburger">&#9776;</label>  --> 
-           
-            <!-- NAVIGATION MENUS -->
-            
-            <div class="menu">
-            
-            <li><a href="/">Startseite</a></li>
-            
-            <li><a href="/">Badminton</a></li>
-            
-            <li><a href="/">Malaysia Open 2023</a></li>
-            
-            <li><a href="/">Termine</a></li>
-            
-            <li><a href="/">Standorte</a></li>
-
-            <li><a href="/">Kontakt</a></li>
-            
-            </div>
-            
-            </ul>
-            
+            <nav class="navbar">
+              <div class="brand-title">Brand Name</div>
+              <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+              <div class="navbar-links">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
             </nav>
 <div class="container">
-
         <section class="MalaysiaOpen">
             <h2>Was sind die Malaysia Open?</h2>
             <figure>
-                <img src="bilder/flyer.jpg"
+                <img src="bilder/badminton.jpg"
                  alt="Malaysia Open 2023 Flyer">
                 <figcaption>
 
@@ -245,7 +236,7 @@ th:last-child {
 <section class="Gewinner">
     <h1>Gewinnertabelle Malaysia Open 2023</h1>
     <figure>
-        <img src="bilder/axelsen.jpg" alt="platzhalter">
+        <img src="bilder/gewinner.jpg" alt="Malaysia Open Gewinner 2023">
         <figcaption>
 
         </figcaption>
