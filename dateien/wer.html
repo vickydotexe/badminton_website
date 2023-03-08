@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <title> Malaysia Open </title>
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    
+    toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')})
+    </script>
 </head>
 <body>
   <main>
@@ -110,11 +117,4 @@
 </div>
   </main>
 </body>
-<script>
-  const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-navbarLinks.classList.toggle('active')})
-</script>
 </html>
