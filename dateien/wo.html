@@ -2,29 +2,43 @@
 <html lang="de">
 <head>
 	<title>Badminton</title>
-	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script>
+
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+    </script>
 </head>
+
 <body>
-            <nav class="navbar">
-              <div class="brand-logo"><img src="bilder/logo.png" alt="Badmintonlogo"></div>
-              <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span></a>
-              <div class="navbar-links">
-                <ul>
-                  <li><a href="#">Startseite</a></li>
-                  <li><a href="#">Badminton</a></li>
-                  <li><a href="#">Malaysia Open 2023</a></li>
-                  <li><a href="#">Standorte</a></li>
-                  <li><a href="#">Termine</a></li>
-                  <li><a href="#">Kontakt</a></li>
-                </ul>
-              </div>
-            </nav>
+	<div class="logo">
+		<img src="../images/logo.png" width="400px" alt="Badminton Center Logo">
+	</div>
+	<nav class="navbar">
+		<div class="brand-title">Badminton Center</div>
+		<a href="#" class="toggle-button">
+		  <span class="bar"></span>
+		  <span class="bar"></span>
+		  <span class="bar"></span>
+		</a>
+		<div class="navbar-links">
+		  <ul>
+			<li><a href="../index.html">Startseite</a></li>
+			<li><a href="was.html">Badminton</a></li>
+			<li><a href="wer.html">Malaysia Open 2023</a></li>
+			<li><a href="wo.html">Standorte</a></li>
+			<li><a href="wann.html">Termine</a></li>
+			<li><a href="aboutus.html">Kontakt</a></li>
+		  </ul>
+		</div>
+	  </nav>
 	<main>
 		<div class="container">
-				<section class="Column1">
+		<section class="Column1">
 			<header>
 				<h1>Badminton in Köln spielen</h1>
 			</header>
@@ -42,9 +56,9 @@
 			<header>
 				<h2>ACR Sportcenter</h2>
 				<p>Neubrücker Ring 48 <br> 51109 Köln</p>
-				<a href="mailto:email@example.com">info@acr-sportcenter.de</a>
-				<a href="tel:02218902001">0221 / 890 20 01</a><br>
-				<a href="http://www.sportcenter-bushido.de">http://www.sportcenter-bushido.de</a></p> 
+				<p><a href="mailto:email@example.com">info@acr-sportcenter.de</a></p>
+				<p><a href="tel:02218902001">0221 / 890 20 01</a></p>
+				<p><a href="http://www.sportcenter-bushido.de">http://www.sportcenter-bushido.de</a></p> 
 			</header>
 			<figure>
 				<img src="images/ACR_Sportcenter.jpg" alt="ACR Sportcenter">
@@ -117,8 +131,7 @@
 				<p>&copy; 2023 Badminton Association</p>
 			</footer>
 		</section>
-
+		</div>
 	</main>
-</div>
 </body>
 </html>
