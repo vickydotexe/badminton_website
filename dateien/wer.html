@@ -102,7 +102,7 @@
     }
 }
  
-table {
+.Gewinner {
     font-size: 10px;
     color: white;
     border-collapse: collapse;
@@ -110,15 +110,15 @@ table {
     table-layout: fixed;    
 }
 
-td {
+td, th{
     background-color: #333;
     color: white;
-}
-
-td, th {
     padding: 10px 10px;
     text-align: left;
- }
+    padding: 10px 10px;
+    text-align: left;
+}
+
 
 
 .container {
@@ -131,8 +131,9 @@ td, th {
    
 }
 
-.Column1, .Column2, .Column3 {
+.Column1, .Column2, .Column3, .Column4, .Column5 {
     background: lightgoldenrodyellow;
+    border-radius: 5%;
 }
 
 </style>
@@ -158,7 +159,9 @@ td, th {
             </nav>
 <div class="container">
         <section class="Column1">
-            <h2>Was sind die Malaysia Open?</h2>
+            <header>
+            <h1>Was sind die Malaysia Open?</h1>
+        </header>
             <figure>
                 <img src="bilder/badminton.jpg"
                  alt="Malaysia Open 2023 Flyer">
@@ -184,7 +187,7 @@ td, th {
         </section>
 
         <section class="Column2">
-<h2>Malaysia Open 2023</h2>
+<h1>Malaysia Open 2023</h1>
 <figure>
 
     <figcaption>
@@ -209,7 +212,7 @@ td, th {
 
         </figcaption>
     </figure>
-    <table>
+    <table class="Gewinner">
         <tr>
           <th>Einzelspiel Männer</th>
           <td>Viktor Axelsen</td>
