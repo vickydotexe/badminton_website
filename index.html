@@ -15,7 +15,31 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
     </script>
-    
+    <script>
+		
+		document.addEventListener('DOMContentLoaded', function() {
+			const button = document.getElementById("countButton");
+			button.addEventListener('click', countCharacters);
+		});
+		function countCharacters()
+		{
+		
+		const headlines = document.getElementsByTagName("h1");
+
+		let totalCharCount = 0;
+
+		for (let i = 0; i < headlines.length; i = i + 1) {
+			const headlineText = headlines[i].textContent;
+			const charCount = headlineText.length;
+
+		
+			totalCharCount += charCount;
+		}
+
+		document.getElementById("letterCount").innerHTML = "Total character count: " + totalCharCount ;
+		
+	}
+	</script>
 </head>
 <body>
     <div class="logo">
@@ -67,8 +91,13 @@ toggleButton.addEventListener('click', () => {
                 <li><a href="dateien/aboutus.html">Über uns</a></li>
                 <li><a href="dateien/impressum.html">Impressum</a></li>
                 <li><a href="dateien/galerie.html">Bildergalerie</a></li>
+                <footer>
+                    <button id="countButton">Count Characters</button>
+                    <p id="letterCount"></p>
+                </footer>
             </section>
         </div>
+        
     </main>
 </body>
 </html>
