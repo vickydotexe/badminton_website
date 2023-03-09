@@ -4,193 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body{
-      font-family: sans-serif;
-    }
-
-    .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
-}
-
-.brand-logo {
-    margin: .5rem;
-}
-
-.navbar-links {
-    height: 100%;
-}
-
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-}
-
-.navbar-links li:hover {
-    background-color: #555;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-}
-header{
-  margin: 10px;
-  text-align: left;
-}
-
-p{
-  margin: 10px;
-  text-align: left;
-}
-    .table-container {
-      padding: 0 3%;
-      margin: 40px auto ;
-    }
-
-    .table{
-      width: 100px;
-      border-collapse: collapse;
-    }
-
-    .btn{
-      color: #f1f1f1;
-      text-decoration: none;
-    }
-    .btn:hover{
-      background-color: #16a8bb;
-      color: #f1f1f1;
-    }
-
-    .table thead{
-      background-color: #16a8bb;
-  
-    }
-
-    .table thead tr th{
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 0.35px;
-      color: #FFFFFF;
-      opacity:1;
-      padding: 12px;
-      vertical-align: top;
-    }
-
-    .table tbody tr td{
-      font-size: 14px;
-      letter-spacing: 0.35px;
-      font-weight: normal;
-      color: #f1f1f1;
-      background-color: #3c3f44;
-      padding: 8px;
-      text-align: center;
-    } 
-
-    @media (max-width: 800px){
-      .table thead{
-        display: none;
-      }
-      .table, .table tbody, .table tr, .table td{
-        display: block;
-        width: 100%;
-      }
-      .table tr{
-        margin-bottom: 15px;
-      }
-      .table tbody tr td{
-        text-align: right;
-        padding-left: 50%;
-        position: relative;
-            }
-            .table td:before{
-              content: attr(data-label);
-              position: absolute;
-              left: 0;
-              width: 50%;
-              padding-left: 15px;
-              font-weight: 600;
-              font-size: 14px;
-              text-align: left;
-
-            }
-    }
-
-  </style>
+  <link rel="stylesheet" href="/dateien/style.css">
+  <script src="/dateien/scripts.js" defer></script>
+  <title>Termine</title>
 </head>
+
 <body>
   <nav class="navbar">
-    <div class="brand-logo"><img src="../bilder/logo.png" alt="Badmintonlogo"></div>
+    <div class="brand-title"><img src="../bilder/logo.png" alt="Badmintonlogo"></div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -211,8 +32,10 @@ p{
     <h1>Termine, welche Sie als Badminton-Enthusiasten nicht verpassen dürfen</h1>
 </header> 
   <p>In der folgenden Tabelle, können Sie sich alle wichtigen Termine für die kommenden <abbr title="Badminton-World-Federation">BWF </abbr> Veranstaltungen anschauen</p>
+  </section>
   <section class="Column2">
   <div class="table-container">
+    <h3>Termine</h3>
     <table class="table">
       <thead>
         <tr>
@@ -283,11 +106,4 @@ p{
   </footer>
 </section>
 </body>
-<script>
-  const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')})
-</script>
 </html>
