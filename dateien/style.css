@@ -8,6 +8,11 @@ body{
   font-family: sans-serif;
 }
 
+
+.background{
+  background-image: url("/bilder/background2.jpeg")
+}
+
 /* Styling für die Navigationsbar*/
 .navbar {
 display: flex;
@@ -66,6 +71,11 @@ background-color: white;
 border-radius: 10px;
 }
 
+.logo{
+  width: 100%;
+  height: auto;
+}
+
 /*Responsive Design für die Navbar*/
 @media (max-width: 800px) {
 .navbar {
@@ -102,7 +112,7 @@ border-radius: 10px;
 
 /* Styling für die Gewinner Tabelle*/
 .Gewinner {
-  font-size: 10px;
+  font-size: .90rem;
   color: white;
   border-collapse: collapse;
   background-color: #2c3d4b;
@@ -131,8 +141,7 @@ border-radius: 10px;
 }
 
 .Column1, .Column2, .Column3, .Column4, .Column5 {
-background:lightyellow;
-  margin: 10px;
+margin: 10px;
 padding: 10px;
 }
 
@@ -145,7 +154,10 @@ text-align: left;
 p{
 margin: 10px;
 text-align: left;
+font-weight: 100;
+line-height: 150%;
 }
+
 .table-container {
   padding: 0 3%;
   margin: 40px auto ;
@@ -171,7 +183,7 @@ text-align: left;
 }
 
 .table thead tr th{
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.35px;
   color: #FFFFFF;
@@ -181,7 +193,7 @@ text-align: left;
 }
 
 .table tbody tr td{
-  font-size: 14px;
+  font-size: 1rem;
   letter-spacing: 0.35px;
   font-weight: normal;
   color: #f1f1f1;
@@ -226,6 +238,10 @@ img {
   display: block;
   padding: 10px;
   height: auto;
+}
+
+.image{
+  float: right;
 }
 
 a[href^='mailto']::before {

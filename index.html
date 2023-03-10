@@ -4,46 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dateien/style.css" type="text/css">
     <title> Startseite</title>
-    <script>
-
-        const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
-    </script>
-    <script>
-		
-		document.addEventListener('DOMContentLoaded', function() {
-			const button = document.getElementById("countButton");
-			button.addEventListener('click', countCharacters);
-		});
-		function countCharacters()
-		{
-		
-		const headlines = document.getElementsByTagName("h1");
-
-		let totalCharCount = 0;
-
-		for (let i = 0; i < headlines.length; i = i + 1) {
-			const headlineText = headlines[i].textContent;
-			const charCount = headlineText.length;
-
-		
-			totalCharCount += charCount;
-		}
-
-		document.getElementById("letterCount").innerHTML = "Total character count: " + totalCharCount ;
-		
-	}
-	</script>
+    <link rel="stylesheet" href="/dateien/style.css" type="text/css">
+    <script src="/dateien/scripts.js" async></script>
+    
 </head>
-<body>
+<body class="background">
     <div class="logo">
-        <img src="bilder/logo.png" alt="logo">
+        <img src="/bilder/logo.png" alt="logo">
     </div>
     <main>
             <nav class="navbar">
@@ -77,7 +45,7 @@ toggleButton.addEventListener('click', () => {
                     <h1>Über Badminton</h1>
                 </header>
                 <figure>
-                    <img src="bilder/allgemein.jpg" alt="Badminton Doppel">
+                    <img src="/bilder/allgemein.jpg" alt="Badminton Doppel">
                 </figure>
                 <p>Badminton ist ein schneller, anspruchsvoller Sport, der in der ganzen Welt populär ist. Wir möchten Ihnen auf unserer Seite alles über die Regeln, Techniken und <a href="https://badmintonprofessor.com/history-of-badminton/">Geschichte</a> dieses Sports vermitteln. Sie können auch mehr über die verschiedenen Wettbewerbe und Veranstaltungen erfahren, die von der Badminton Association organisiert werden.</p>
             </section>

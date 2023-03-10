@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerie</title>
     <link rel="stylesheet" href="/dateien/style.css">
-  <script src="/dateien/scripts.js" defer></script>
+  <script src="/dateien/scripts.js" async></script>
 </head>
 <body>
   
@@ -36,42 +36,72 @@
         <header>
             <h2>Bildergalerie Malaysia Open 2023</h2>
         </header>
-            <figure>
-                <img src="#"
-                 alt="platzhalter">
-                <figcaption>
-            
-                </figcaption>
-
-            </figure>
             <p>
-                In dieser Bildergalerie können Sie durch diverse Bilder des Malysia Open 2023 Turniers stöbern und sich einen Eindruck von dem Turnier machen. Wenn Sie den Kampgeist in den Geischtern der Teilnehmer sehen, können Sie vielleicht unser großes Interesse für's Badminton verstehen. 
+                In dieser Bildergalerie können Sie durch diverse Bilder des Malysia Open 2023 Turniers durchstöbern und sich einen Eindruck von dem Turnier machen. Wenn Sie den Kampgeist in den Geischtern der Teilnehmer sehen, können Sie vielleicht unser großes Interesse für den Sport Badminton verstehen. 
                 Das folgende Zitat soll unsere große Leidenschaft für Badminton, nochmal verdeutlichen. 
             <blockquote>
                 I hope wholeheartedly that badminton will be as popular and respected as tennis one day. <br>
                 <cite>Lin Dan</cite> 
             </blockquote>
-            Wie auch "Lin Dan" hoffen wir, dass Badminton in Zukunft mehr Aufmerksamkeit und Respekt erlangt. </p>
+           <p> Wie auch "Lin Dan" hoffen wir, dass Badminton in Zukunft mehr Aufmerksamkeit und Respekt erlangt. </p>
             <footer>
                 <p>&copy;Badminton-Enthusiasten</p>
             </footer>
             <section class="Column2">
-                <title>Document</title>
-            </head>
-            <body>
+              <h2>Bildergalerie</h2>
               <section aria-label="Newest Photos">
                 <div class="carousel" data-carousel>
                   <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
                   <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
                   <ul data-slides>
                     <li class="slide" data-active>
-                      <img src="https://source.unsplash.com/78A265wPiO4" alt="Nature Image #1">
+                      <img src="bilder/bild0.png" alt="Nature Image #0">
                     </li>
                     <li class="slide">
-                      <img src="https://source.unsplash.com/eOpewngf68w" alt="Nature Image #2">
+                      <img src="/bilder/bild01.png" alt="Nature Image #1">
                     </li>
                     <li class="slide">
-                      <img src="https://source.unsplash.com/ndN00KmbJ1c" alt="Nature Image #3">
+                      <img src="/bilder/bild03.png" alt="Nature Image #3">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild04.png" alt="Nature Image #4">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild05.png" alt="Nature Image #5">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild06.png" alt="Nature Image #6">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild07.png" alt="Nature Image #7">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild08.png" alt="Nature Image #8">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild09.png" alt="Nature Image #9">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild10.png" alt="Nature Image #10">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild11.png" alt="Nature Image #11">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild12.png" alt="Nature Image #12">
+                    </li>
+
+                    <li class="slide">
+                      <img src="/bilder/bild13.png" alt="Nature Image #13">
                     </li>
                   </ul>
                 </div>
@@ -85,24 +115,4 @@
     </section>
 </main>
 </body>
-<script>
-    const buttons = document.querySelectorAll("[data-carousel-button]")
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
-
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
-
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})
-</script>
 </html>
