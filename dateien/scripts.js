@@ -1,25 +1,33 @@
+		//JS für LetterCounter
 
-		//JS für LetterCounter//
+    //erstelle nach dem das DOM geladen wurde einen eventlistener der merkt wenn ein button geclickt wird und die funktion "countCharacters" feuert
 		document.addEventListener('DOMContentLoaded', function() {
 			const button = document.getElementById("countButton");
 			button.addEventListener('click', countCharacters);
 		});
-		function countCharacters()
-		{
+
+    //erstelle die funktion "countCharacters"
+		function countCharacters() {
 		
+    //hol dir alle h1 headlines
 		const headlines = document.getElementsByTagName("h1");
 
+    //setze absoluten zeichenanzahl auf 0
 		let totalCharCount = 0;
 
+    //für alle headlines im dokument
 		for (let i = 0; i < headlines.length; i = i + 1) {
+      //hol dir den inhalt einer h1 elements
 			const headlineText = headlines[i].textContent;
+      //zähle die zeichen dieses h1 elements
 			const charCount = headlineText.length;
 
-		
+      //addiere die anzahl zur absoluten anzahl "totalCharCount"
 			totalCharCount += charCount;
 		}
 
-		document.getElementById("letterCount").innerHTML = "Total character count: " + totalCharCount ;
+    //lege fest, dass das Element mit der Id "letterCount" die absolute zeichenanzahl anzeigt
+		document.getElementById("letterCount").innerHTML = `Total character count: ${totalCharCount}`;
 		
 	}
 
