@@ -27,7 +27,7 @@
 		}
 
     //lege fest, dass das Element mit der Id "letterCount" die absolute zeichenanzahl anzeigt
-		document.getElementById("letterCount").innerHTML = `Total character count: ${totalCharCount}`;
+		document.getElementById("letterCount").innerHTML = `Diese Seite enthält in den Überschriften ${totalCharCount} Zeichen.`;
 		
 	}
 
