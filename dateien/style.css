@@ -72,13 +72,22 @@ border-radius: 10px;
 }
 
 .logo{
-  width: 100%;
+  width: 50%;
   height: auto;
+  padding: 1%;
 }
 
-/*Responsive Design für die Navbar*/
+/*Responsive Design*/
 @media (max-width: 800px) {
-.navbar {
+
+  .logo{
+    width: 80%;
+    height: auto;
+    padding: 1%;
+  }
+  
+
+  .navbar {
     flex-direction: column;
     align-items: flex-start;
 }
@@ -209,6 +218,7 @@ border-radius: 10px;
   ;
 }
 }
+
 
 .Column1, .Column2, .Column3, .Column4, .Column5 {
 margin: 10px;
