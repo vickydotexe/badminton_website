@@ -2,12 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
-
-body{
-  font-family: sans-serif;
-}
-
 
 .background{
   background-image: url("/bilder/background2.jpeg")
@@ -15,60 +11,60 @@ body{
 
 /* Styling für die Navigationsbar*/
 .navbar {
-display: flex;
-position: relative;
-justify-content: space-between;
-align-items: center;
-background-color: #333;
-color: white;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  color: white;
 }
 
 .brand-title {
-font-size: 1.5rem;
-margin: .5rem;
+  font-size: 1.5rem;
+  margin: .5rem;
 }
 
 .navbar-links {
-height: 100%;
+  height: 100%;
 }
 
 .navbar-links ul {
-display: flex;
-margin: 0;
-padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links li {
-list-style: none;
+  list-style: none;
 }
 
 .navbar-links li a {
-display: block;
-text-decoration: none;
-color: white;
-padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
 }
 
 .navbar-links li:hover {
-background-color: #555;
+  background-color: #555;
 }
 
 .toggle-button {
-position: absolute;
-top: .75rem;
-right: 1rem;
-display: none;
-flex-direction: column;
-justify-content: space-between;
-width: 30px;
-height: 21px;
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
 }
 
 .toggle-button .bar {
-height: 3px;
-width: 100%;
-background-color: white;
-border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .logo{
@@ -77,17 +73,26 @@ border-radius: 10px;
   padding: 1%;
 }
 
+button {
+  background-color: #BADA55;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
 /*Responsive Design*/
 @media (max-width: 800px) {
 
-  .logo{
+.logo{
     width: 80%;
     height: auto;
     padding: 1%;
   }
-  
 
-  .navbar {
+
+.navbar {
     flex-direction: column;
     align-items: flex-start;
 }
@@ -123,24 +128,23 @@ border-radius: 10px;
 
 /* The dropdown container */
 .dropdown {
-  float: center;
   overflow: hidden;
   text-align:center;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px; 
+  font-size: inherit; 
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add a light gray background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
 }
@@ -182,7 +186,7 @@ border-radius: 10px;
   color: white;
   border-collapse: collapse;
   background-color: #2c3d4b;
-  table-layout: fixed;    
+  table-layout: fixed;
 }
 
 .Namen {
@@ -201,8 +205,7 @@ border-radius: 10px;
   height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
   gap: 0.5rem;
-  font-family:Arial, Helvetica, sans-serif;
- 
+  line-height: 150%;
 }
 
 /*
@@ -215,7 +218,6 @@ border-radius: 10px;
 @media (max-width: 1000px) {
  .container { 
   display:block;
-  ;
 }
 }
 
@@ -232,10 +234,9 @@ text-align: left;
 }
 
 p{
-margin: 10px;
+
 text-align: left;
 font-weight: 100;
-line-height: 150%;
 }
 
 .table-container {
@@ -308,7 +309,6 @@ line-height: 150%;
           font-weight: 600;
           font-size: 14px;
           text-align: left;
-
         }
 }
 
