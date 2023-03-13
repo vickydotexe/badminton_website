@@ -8,6 +8,7 @@
 body {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .background{
@@ -22,7 +23,18 @@ body {
   align-items: center;
   background-color: #333333;
   color: white;
-  border-radius: 100vmax;
+}
+
+@media (min-width: 801px){
+
+  .navbar {
+    border-radius: 100vmax;
+  }
+
+  .navbar-links li:last-child a {
+    border-radius: 0 100vmax 100vmax 0;
+    overflow: hidden;
+  }
 }
 
 .brand-title {
@@ -44,15 +56,13 @@ body {
   list-style: none;
 }
 
+
+
 .navbar-links li a {
   display: block;
   text-decoration: none;
   color: white;
   padding: 1rem;
-}
-
-.navbar-links li:hover {
-  background-color: #555;
 }
 
 .toggle-button {
@@ -118,7 +128,7 @@ button {
 }
 
 .navbar-links ul li {
-    text-align: center;
+  text-align: center;
 }
 
 .navbar-links ul li a {
@@ -144,6 +154,7 @@ button {
   border: none;
   outline: none;
   color: white;
+  border-radius: 0;
   padding: 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
