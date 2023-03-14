@@ -239,7 +239,7 @@ button {
 }
 
 
-.Column1, .Column2, .Column3, .Column4, .Column5 {
+.Column{
 margin: 10px;
 padding: 10px;
 }
