@@ -220,7 +220,7 @@ button {
 .container {
   display:grid;
   height: 100vh;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 0.5rem;
   line-height: 150%;
 }
