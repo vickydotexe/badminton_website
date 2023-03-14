@@ -5,12 +5,6 @@
   font-family: Montserrat;
 }
 
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .background{
   background-image: url("/bilder/background2.jpeg")
 }
@@ -26,6 +20,12 @@ body {
 }
 
 @media (min-width: 801px){
+
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
   .navbar {
     border-radius: 100vmax;
@@ -94,7 +94,7 @@ button {
   color: #000000;
   border: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 20px;
   padding: 10px;
 }
 
@@ -220,7 +220,7 @@ button {
 .container {
   display:grid;
   height: 100vh;
-  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0.5rem;
   line-height: 150%;
 }
