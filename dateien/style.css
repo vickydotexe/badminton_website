@@ -56,6 +56,21 @@
   list-style: none;
 }
 
+blockquote p {
+  font-weight: 700;
+  font-style: italic;
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
 
 
 .navbar-links li a {
@@ -329,6 +344,12 @@ font-weight: 100;
         }
 }
 
+figcaption {
+  padding: 10px;
+  font-size: 1em;
+  font-style: italic;
+  
+}
 
 img {
   max-width: 100%;
@@ -339,6 +360,7 @@ img {
 
 .image{
   float: right;
+
 }
 
 a[href^='mailto']::before {
