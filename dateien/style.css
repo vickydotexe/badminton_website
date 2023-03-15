@@ -5,8 +5,22 @@
   font-family: Montserrat;
 }
 
-.background{
-  background-image: url("/bilder/background2.jpeg")
+.kachel{
+  background-image: url("/bilder/allgemein.jpg");
+  min-height: 10em;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+}
+
+.kachel header {
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  margin: 0;
+  padding: 10px;
 }
 
 a{
@@ -367,9 +381,14 @@ img {
   height: auto;
 }
 
-.image{
+.image-float{
   float: right;
+}
 
+@media (max-width: 1000px) {
+  .image-float{
+    float: none;
+  }
 }
 
 a[href^='mailto']::before {
