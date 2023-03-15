@@ -30,6 +30,10 @@ h1 {
   hyphens: auto;
 }
 
+section li {
+  margin-left: 15px;
+}
+
 a{
   text-decoration: none;
 }
