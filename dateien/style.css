@@ -9,6 +9,10 @@
   background-image: url("/bilder/background2.jpeg")
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Styling für die Navigationsbar*/
 .navbar {
   display: flex;
