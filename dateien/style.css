@@ -172,16 +172,14 @@ button {
   border-radius: 0;
   padding: 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
-/* Add a light gray background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #555;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   position:absolute;
   display: none;
@@ -192,7 +190,6 @@ button {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   float: none;
   padding: 12px 16px;
@@ -201,18 +198,15 @@ button {
   text-align: center;
 }
 
-/* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #333;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
 
-/* Styling für die Gewinner Tabelle*/
 .Gewinner {
   font-size: .90rem;
   color: white;
